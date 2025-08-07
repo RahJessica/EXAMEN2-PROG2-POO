@@ -16,5 +16,10 @@ public class Moderator extends User{
         return "";
     }
 
+    @Override
+    String postComment(String comment) {
+        return comment;
+    }
+
 
 }

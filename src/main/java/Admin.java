@@ -15,4 +15,9 @@ public class Admin extends User{
     String commentPublication() {
         return "";
     }
+
+    @Override
+    String postComment(String comment) {
+        return comment;
+    }
 }

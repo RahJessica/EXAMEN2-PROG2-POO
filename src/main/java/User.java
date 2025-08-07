@@ -42,4 +42,5 @@ public abstract class User {
 
     abstract Publication postPublication();
     abstract String commentPublication();
+    abstract String postComment(String  comment);
 }
