@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Objects;
 
 public abstract class User {
     private String userId;
@@ -27,6 +28,16 @@ public abstract class User {
 
     public LocalDate getCreatedAt() {
         return createdAt;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId='" + userId + '\'' +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", createdAt=" + createdAt +
+                '}';
     }
 
     abstract Publication postPublication();
